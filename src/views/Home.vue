@@ -1,24 +1,27 @@
 <template>
   <div class="home">
-    <Assignment msg="Welcome to Your Innings App"/>
+    <Assignment msg="Welcome to Your Innings App" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Assignment from '@/components/Assignment.vue'
+import Assignment from "@/components/Assignment.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Assignment
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
 .home {
-  width: 100%;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
 }
 </style>
